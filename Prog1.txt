@@ -1,0 +1,39 @@
+
+package allsortsTesting;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+
+
+import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+
+public class allsortsTesting {
+
+	@Test
+	public void test() {
+		
+
+		    String unique = "example";
+
+		    System.setProperty("webdriver.chrome.driver", "C:\\Users\\Selenium\\chromedriver.exe");
+
+		    WebDriver driver = new ChromeDriver();	
+
+		    driver.get("C:\\Users\\Probook6570b\\Desktop\\cats.html");
+		    
+		    
+		    driver.findElement(By.cssSelector("#recordlist li:nth-child(4)"));
+		    
+		    String myWay = driver.findElement(By.cssSelector("#recordlist li:nth-child(2)")).getText();
+		    System.out.println(myWay);
+		    String myWayB = driver.findElement(By.cssSelector("#recordlist li:nth-child(3)")).getText();
+		    
+	}
+
+}
